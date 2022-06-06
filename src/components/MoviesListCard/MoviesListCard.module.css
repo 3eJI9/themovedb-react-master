@@ -1,0 +1,91 @@
+.cardBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 7px;
+    background-color: var(--background-card);
+    overflow: hidden;
+    transition: 200ms;
+    outline: var(--border);
+}
+
+.cardBlock:hover {
+    transform: scale(1.04,1.04);
+    z-index: 99;
+    transition: 200ms;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 224px;
+    justify-content: flex-start;
+}
+
+.card > a > img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.cardTitleBlock {
+    margin: 5px;
+}
+
+.title {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.title > a {
+    color: black;
+    transition: 200ms;
+}
+
+.title >a:hover {
+    color: #172c52;
+    transition: 200ms;
+}
+
+.genresBlock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 3px;
+}
+
+.genres {
+    padding: 1px 3px;
+    border: 1px solid black;
+    font-size: 13px;
+}
+
+.date {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.btn > a {
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    color: black;
+    transition: 200ms;
+}
+
+.btn > a:hover {
+    border: 1px solid #172c52;
+    background-color: #172c52;
+    color: white;
+    transition: 200ms;
+}

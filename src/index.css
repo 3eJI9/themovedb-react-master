@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html[class='dark'] {
+    --background-color: #172c52;
+    --background-card: #fdfdfd;
+    --border: none;
+    --text: #ffffff;
+    --border-footer: 1px solid white;
+    --text-color: #ffffff;
+}
+
+html[class='light'] {
+    --background-color: #fdfdfd;
+    --background-card: #ffffff;
+    --border: 1px solid black;
+    --text: #ffffff;
+    --border-footer: none;
+    --text-color: #8f8f8f;
+}
+
+body {
+    background-color: var(--background-color);
+}
